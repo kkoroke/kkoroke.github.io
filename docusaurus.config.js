@@ -11,8 +11,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kkoroke',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: '공사중..',
+  favicon: 'img/profile_recolor.ico',
 
   // Set the production url of your site here
   url: 'https://kkoroke.github.io/',
@@ -34,9 +34,25 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'kr',
-    locales: ['kr'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
+
+  /*
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/board',
+            from: ['/docs/mars-cm'],
+          },
+        ]
+      }
+    ],
+  ],
+  */
 
   presets: [
     [
@@ -78,17 +94,27 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        // title: 'Jhheo',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/profile_recolor.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            label: 'Overview',
             position: 'left',
-            label: 'Tutorial',
+            to: '/docs/board/overview',
+          },
+          {
+            type: 'dropdown',
+            label: 'Projects',
+            position: 'left',
+            items: [
+              {
+                label: 'stm32',
+                to: '/docs/intro',
+              },
+            ],
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
