@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kkoroke',
+  title: 'Kkoroke 블로그',
   tagline: '공사중..',
   favicon: 'img/profile_recolor.ico',
 
